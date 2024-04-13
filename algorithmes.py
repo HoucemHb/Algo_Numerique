@@ -13,7 +13,7 @@ def gaussian_elimination(A, b):
 
         for j in range(i+1, n):
             factor = A[j, i] / A[i, i]
-            A[j, i:] = A[j, i:] - factor * A[i, i:]
+            A[j, i+1:] = A[j, i+1:] - factor * A[i, i+1:]
             b[j] = b[j] - factor * b[i]
 
     # Substitution arrière
