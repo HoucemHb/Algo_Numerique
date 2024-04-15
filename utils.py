@@ -15,9 +15,7 @@ def generate_diagonally_dominant_matrix(n):
         # Set the diagonal element to a large enough value
         A[i, i] = np.sum(np.abs(A[i])) + np.random.uniform(1, 10)
     return A
-
-
-
+    
 # Génération des vecteurs b pour chaque matrice
 def generate_random_vector(n):
     return np.random.uniform(-50, 50, n)

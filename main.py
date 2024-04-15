@@ -22,13 +22,13 @@ for size in matrix_sizes:
     matrices[size] = generate_diagonally_dominant_matrix(size)
 
 
-
+print('calculating .. ')
 
 # Dictionnaires pour stocker les temps moyens pour chaque taille de matrice
 times_gauss = {}
 times_gauss_seidel = {}
 
-print('calculating .. ')
+
 # Mesure des performances pour chaque algorithme et taille de matrice
 for size in matrix_sizes:
     A = matrices[size]
@@ -53,8 +53,6 @@ df = pd.DataFrame(data)
 
 # Affichage du DataFrame
 print(df)
-
-
 
 # Tracé des graphiques
 plt.figure(figsize=(12, 8))
